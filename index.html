@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prática Tailwind - Dia 2</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+  <section class="py-10 px-4">
+
+    <h1 class="text-3xl font-bold text-green-800 text-center mb-8">
+      Tarefa 1 - Card de Notícia
+    </h1>
+
+    <div class="max-w-sm mx-auto bg-white rounded-2xl shadow-md overflow-hidden border border-green-200">
+
+
+      <img
+        src="https://i.pinimg.com/736x/8d/4e/4b/8d4e4bbcc1cd6e5ef47452f5d0a4faef.jpg"
+        alt="Troféu de premiação"
+        class="w-full h-48 object-cover"
+      />
+
+      <div class="p-6 space-y-3">
+
+        <h2 class="text-2xl font-bold text-green-800">
+          IFRN tem projetos entre os vencedores do Prêmio IEL 2026
+        </h2>
+
+        <p class="text-gray-700 text-base">
+          Instituto conquista destaque com projetos inovadores nas áreas
+          de educação e tecnologia, reforçando seu compromisso com a
+          inovação e o desenvolvimento acadêmico.
+        </p>
+
+        <div class="flex flex-wrap gap-2 pt-2">
+
+          <span class="bg-green-200 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">
+            1º Lugar
+          </span>
+
+          <span class="bg-green-200 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">
+            Educação Inovadora
+          </span>
+
+          <span class="bg-green-200 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">
+            Prêmio IEL 2026
+          </span>
+
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <section class="max-w-7xl mx-auto px-4 py-10">
+
+    <h1 class="text-3xl font-bold text-green-800 mb-8">
+      Notícias
+    </h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <article
+        class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col"
+      >
+
+        <img
+          src="https://i.pinimg.com/736x/8d/4e/4b/8d4e4bbcc1cd6e5ef47452f5d0a4faef.jpg"
+          alt="Premiação"
+          class="w-full h-48 object-cover"
+        />
+
+        <div class="p-5 flex flex-col flex-1 space-y-2">
+
+          <div>
+            <span
+              class="inline-block text-xs font-semibold px-3 py-1 rounded-full bg-green-100 text-green-800"
+            >
+              Prêmio IEL 2026
+            </span>
+          </div>
+
+          <h2 class="text-xl font-bold text-green-800">
+            IFRN tem projetos entre os vencedores do Prêmio IEL 2026
+          </h2>
+
+          <p class="text-gray-700 text-sm flex-1">
+            Instituto conquistou o 1º lugar em Educação Inovadora - Nível
+            Técnico e o 2º lugar em Educação Inovadora - Nível Superior.
+          </p>
+
+          <p class="text-gray-500 text-xs mt-2">
+            Há 20 horas
+          </p>
+
+        </div>
+      </article>
+
+      <article
+        class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col"
+      >
+
+        <img
+          src="https://i.pinimg.com/736x/7c/fc/65/7cfc65a19fbe74a34cb6833467a07008.jpg"
+          alt="Pesquisa científica"
+          class="w-full h-48 object-cover"
+        />
+
+        <div class="p-5 flex flex-col flex-1 space-y-2">
+
+          <div>
+            <span
+              class="inline-block text-xs font-semibold px-3 py-1 rounded-full bg-blue-100 text-blue-800"
+            >
+              Pesquisa
+            </span>
+          </div>
+
+          <h2 class="text-xl font-bold text-green-800">
+            IFRN amplia projetos de pesquisa e inovação
+          </h2>
+
+          <p class="text-gray-700 text-sm flex-1">
+            Novos projetos desenvolvidos por estudantes e professores
+            buscam soluções inovadoras para desafios da sociedade.
+          </p>
+
+          <p class="text-gray-500 text-xs mt-2">
+            Há 1 dia
+          </p>
+
+        </div>
+      </article>
+
+      <article
+        class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col"
+      >
+
+        <img
+          src="https://images.unsplash.com/photo-1521292270410-a8c4d716d518?auto=format&fit=crop&w=800&q=80"
+          alt="Intercâmbio internacional"
+          class="w-full h-48 object-cover"
+        />
+
+        <div class="p-5 flex flex-col flex-1 space-y-2">
+
+          <div>
+            <span
+              class="inline-block text-xs font-semibold px-3 py-1 rounded-full bg-yellow-100 text-yellow-800"
+            >
+              Internacionalização
+            </span>
+          </div>
+
+          <h2 class="text-xl font-bold text-green-800">
+            Estudantes do IFRN participam de programa internacional
+          </h2>
+
+          <p class="text-gray-700 text-sm flex-1">
+            Programa de intercâmbio oferece aos estudantes novas
+            experiências acadêmicas e culturais em instituições estrangeiras.
+          </p>
+
+          <p class="text-gray-500 text-xs mt-2">
+            Há 2 dias
+          </p>
+
+        </div>
+      </article>
+
+      <article
+        class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col"
+      >
+
+        <img
+          src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80"
+          alt="Tecnologia"
+          class="w-full h-48 object-cover"
+        />
+
+        <div class="p-5 flex flex-col flex-1 space-y-2">
+
+          <div>
+            <span
+              class="inline-block text-xs font-semibold px-3 py-1 rounded-full bg-purple-100 text-purple-800"
+            >
+              Tecnologia
+            </span>
+          </div>
+
+          <h2 class="text-xl font-bold text-green-800">
+            Estudantes desenvolvem novas soluções tecnológicas
+          </h2>
+
+          <p class="text-gray-700 text-sm flex-1">
+            Projetos acadêmicos utilizam tecnologia para criar soluções
+            que podem beneficiar a comunidade.
+          </p>
+
+          <p class="text-gray-500 text-xs mt-2">
+            Há 3 dias
+          </p>
+
+        </div>
+      </article>
+
+      <article
+        class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col"
+      >
+
+        <img
+          src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80"
+          alt="Educação"
+          class="w-full h-48 object-cover"
+        />
+
+        <div class="p-5 flex flex-col flex-1 space-y-2">
+
+          <div>
+            <span
+              class="inline-block text-xs font-semibold px-3 py-1 rounded-full bg-red-100 text-red-800"
+            >
+              Educação
+            </span>
+          </div>
+
+          <h2 class="text-xl font-bold text-green-800">
+            IFRN promove novas ações de educação
+          </h2>
+
+          <p class="text-gray-700 text-sm flex-1">
+            Instituição realiza atividades para fortalecer o ensino e
+            proporcionar novas oportunidades aos estudantes.
+          </p>
+
+          <p class="text-gray-500 text-xs mt-2">
+            Há 4 dias
+          </p>
+
+        </div>
+      </article>
+
+      <article
+        class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col"
+      >
+
+        <img
+          src="https://i.pinimg.com/736x/8d/93/8c/8d938c9c83bd4c2cac6f9f4625831b31.jpg"
+          alt="Estudantes"
+          class="w-full h-48 object-cover"
+        />
+
+        <div class="p-5 flex flex-col flex-1 space-y-2">
+
+          <div>
+            <span
+              class="inline-block text-xs font-semibold px-3 py-1 rounded-full bg-indigo-100 text-indigo-800"
+            >
+              Campus
+            </span>
+          </div>
+
+          <h2 class="text-xl font-bold text-green-800">
+            IFRN recebe novos estudantes para o semestre
+          </h2>
+
+          <p class="text-gray-700 text-sm flex-1">
+            Comunidade acadêmica recebe novos alunos para mais um período
+            de aprendizado, pesquisa e desenvolvimento.
+          </p>
+
+          <p class="text-gray-500 text-xs mt-2">
+            Há 5 dias
+          </p>
+
+        </div>
+      </article>
+
+    </div>
+
+  </section>
+
+</body>
+</html>
